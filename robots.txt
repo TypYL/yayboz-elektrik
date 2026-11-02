@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://typyl.github.io/yayboz-elektrik/sitemap.xml
