@@ -1,0 +1,28 @@
+{
+  "project_images": {
+    "source": "User-provided Otomasyon projeleri.pptx",
+    "author_credit_in_presentation": "Emrullah Yayla",
+    "transformation": "Original 1920x1080 slide images exported as WebP. Selected photographs are framed with CSS on project cards; full unaltered slide composition is available in the gallery.",
+    "output_pattern": "dist/assets/proje-NN.webp",
+    "video_limitation": "The presentation refers to external local video files. The video files were not embedded in the supplied PowerPoint and are not published."
+  },
+  "hero": {
+    "output": "dist/assets/endustri-hero.webp",
+    "share_image": "dist/assets/paylasim.jpg",
+    "method": "Built-in image_gen tool, then web format conversion",
+    "disclosure": "Temsili endüstriyel görsel",
+    "prompt": "Use case: ads-marketing. Create a premium wide 16:9 photographic website hero background for a Turkish electrical engineering and industrial automation company. Main subject: immaculate, physically plausible open electrical control cabinets on the right half, neatly routed cables, DIN rails, PLC modules, terminal blocks and copper busbars, leading into a modern factory production hall in the background. Composition: cinematic horizontal landscape, deep dark navy/charcoal negative space on the left 45 percent for a website headline that will be added in HTML; detailed sharp industrial equipment predominantly on the right. Subtle warm amber practical light, steel grey, small restrained orange and violet accents, realistic industrial photography, sophisticated high contrast lighting, no people, no dramatic sparks, no fantasy holograms, no logos, no lettering, no text, no watermark. This is an illustrative marketing scene, not documentation of a specific factory."
+  },
+  "branding": "Vector lightning and text wordmark based on the user-provided Yayboz Elektrik business card; purple/orange palette preserved.",
+  "font": {
+    "name": "Manrope",
+    "source": "https://github.com/google/fonts/tree/main/ofl/manrope",
+    "license": "SIL Open Font License 1.1",
+    "local_license": "dist/assets/Manrope-LICENSE.txt"
+  },
+  "business_information": {
+    "contact_source": "User-provided business card",
+    "experience_and_engineering_team_source": "User instructions",
+    "project_catalog_source": "User instructions and supplied presentation"
+  }
+}

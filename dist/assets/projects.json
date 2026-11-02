@@ -1,0 +1,329 @@
+[
+  {
+    "id": "p01",
+    "title": "KEYENCE ve PLC ile ilaç kutularında Lot No ve SKT kontrolü",
+    "category": "Otomasyon sistemleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p02",
+    "title": "Etiket makinesi otomasyon sistemi",
+    "category": "Otomasyon sistemleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p03",
+    "title": "Pnömatik oransal regülatörlü pres otomasyonu",
+    "category": "Otomasyon sistemleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p04",
+    "title": "Contalı ve pnömatik yat kapısı otomasyonu",
+    "category": "Otomasyon sistemleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p05",
+    "title": "Kağıt helva makinesi otomasyonu",
+    "category": "Otomasyon sistemleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p06",
+    "title": "Dikey sac kumlama makinesi otomasyon sistemi",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "note": "",
+    "description": "Motor sürücüleri, Modbus RTU haberleşmesi ve kumanda panosuyla dikey sac kumlama makinesi kontrolü."
+  },
+  {
+    "id": "p07",
+    "title": "Endüstriyel datalogger — beyaz eşya ölçüm istasyonu",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "note": "",
+    "description": "Enerji, sıcaklık, basınç, nem ve debi verilerinin kaydedilmesi; HMI üzerinden izleme ve veri dışa aktarma."
+  },
+  {
+    "id": "p08",
+    "title": "Folyo dilimleme makinesi",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      16,
+      17,
+      18,
+      19
+    ],
+    "note": "",
+    "description": "Motor ve sürücü kontrolü, kesim ayarları, uzunluk takibi ve HMI operatör ekranları."
+  },
+  {
+    "id": "p09",
+    "title": "120 ton eksantrik pres",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      26,
+      27
+    ],
+    "note": "",
+    "description": "PLC tabanlı pres kontrolü, çalışma modları ve proje sunumunda yer alan kontrol mantığı."
+  },
+  {
+    "id": "p10",
+    "title": "Step motor ile oyuk açma makinesi",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      20
+    ],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p11",
+    "title": "PID ile fileleme makinesi",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      21,
+      22,
+      23,
+      24
+    ],
+    "note": "",
+    "description": "Ürün fileleme sürecinde sıcaklık kontrolü, konveyör ve kesim adımlarının otomasyonu."
+  },
+  {
+    "id": "p12",
+    "title": "Yağ ayrıştırma makinesi SCADA",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      37
+    ],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p13",
+    "title": "Friksiyon pres revizyonu",
+    "category": "Otomasyon sistemleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p14",
+    "title": "Kulp basma makinesi — hidrolik pres",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      45
+    ],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p15",
+    "title": "Mezuniyet projesi",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      32,
+      33,
+      34,
+      35
+    ],
+    "note": "Eğitim projesi",
+    "description": "PLC ve HMI ile notaların işlenmesi ve elektronik org kontrolü üzerine mezuniyet çalışması."
+  },
+  {
+    "id": "p16",
+    "title": "Bilgi yarışması standı",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      47
+    ],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p17",
+    "title": "Çeşitli otomasyon projeleri",
+    "category": "Otomasyon sistemleri",
+    "slides": [
+      48,
+      49
+    ],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p18",
+    "title": "Excel otomasyonları — veri işleme",
+    "category": "Otomasyon sistemleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p19",
+    "title": "Çapak alma makinesi",
+    "category": "Siemens TIA Portal / WinCC",
+    "slides": [
+      44
+    ],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p20",
+    "title": "Asansör otomasyon sistemi",
+    "category": "Siemens TIA Portal / WinCC",
+    "slides": [
+      38
+    ],
+    "note": "Simülasyon",
+    "description": ""
+  },
+  {
+    "id": "p21",
+    "title": "Eş yaşlandırma projesi",
+    "category": "Siemens TIA Portal / WinCC",
+    "slides": [
+      40
+    ],
+    "note": "Simülasyon",
+    "description": ""
+  },
+  {
+    "id": "p22",
+    "title": "Motor yol verme modları",
+    "category": "Siemens TIA Portal / WinCC",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p23",
+    "title": "Havuz sistemi",
+    "category": "Siemens TIA Portal / WinCC",
+    "slides": [
+      42
+    ],
+    "note": "Simülasyon",
+    "description": ""
+  },
+  {
+    "id": "p24",
+    "title": "PKM 80 mekanik montaj makinesi",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [
+      49
+    ],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p25",
+    "title": "Teker sıvama makinesi",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p26",
+    "title": "Alüminyum profil bükme makinesi — çatılar için",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p27",
+    "title": "Kumaş yapıştırma makinesi",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p28",
+    "title": "17 valfli patlaç",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p29",
+    "title": "Perçinleme makinesi",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [
+      29,
+      30
+    ],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p30",
+    "title": "Kağıt helva makinesi",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p31",
+    "title": "Yuvarlak profil delme makinesi",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p32",
+    "title": "Kauçuk pişirme makinesi — hidrolik",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p33",
+    "title": "Perçin çakma projesi",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  },
+  {
+    "id": "p34",
+    "title": "Çift kapaklı kumlama makinesi",
+    "category": "Elektrik devresi proje çizimleri",
+    "slides": [],
+    "note": "",
+    "description": ""
+  }
+]
