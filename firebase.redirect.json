@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "site": "yayboz",
+    "public": "hosting-redirect/public",
+    "ignore": ["**/.*"],
+    "redirects": [
+      {"source": "**", "destination": "https://yayboz-elektrik.web.app/", "type": 302}
+    ]
+  }
+}

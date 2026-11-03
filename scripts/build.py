@@ -6,7 +6,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / 'dist'
-BASE = 'https://typyl.github.io/yayboz-elektrik/'
+BASE = 'https://yayboz-elektrik.web.app/'
 ICONS = {
  'arrow':'<path d="M5 12h14m-6-6 6 6-6 6"/>',
  'up':'<path d="M6 18 18 6M6 6h12v12"/>',

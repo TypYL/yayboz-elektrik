@@ -2,12 +2,17 @@
 
 Türkçe, mobil uyumlu şirket tanıtım sitesi. Elektrik ve elektronik mühendisliği, proje ve taahhüt, otomasyon, pano imalatı ve montajı, sanayi/konut tesisatları, arıza teşhis, bakım, servis, malzeme alım satımı ve revizyon hizmetlerini kapsar.
 
+Canlı site: **https://yayboz-elektrik.web.app/**
+
+Firebase projesi ve Hosting sitesi: `yayboz-elektrik`. Kaynak kodu: https://github.com/TypYL/yayboz-elektrik
+
 ## Yapı
 
 - `dist/`: Yayımlanabilir statik site. Sunucu veya paket kurulumu gerektirmez.
 - `scripts/build.py`: İncelenmiş içerik, 9 hizmet ve 34 proje kaydından sayfaları üretir.
 - `dist/styles.css`, `dist/app.js`: Tasarım ve tarayıcı etkileşimleri.
 - `firebase.json`: Firebase Hosting yapılandırması; yayımlanacak klasör `dist`.
+- `.firebaserc`: Kullanıcının oluşturduğu `yayboz-elektrik` Firebase projesi seçimi.
 - `ASSET_SOURCES.json`: Görsel kaynakları, temsili kapak görselinin üretim bilgisi.
 
 ## Yerel önizleme
@@ -19,16 +24,19 @@ python3 -m http.server 8769 --bind 127.0.0.1 --directory dist
 
 ## Yayın
 
-Kaynak kodu `main` dalında tutulur. `gh-pages` dalı yalnızca `dist` içeriğini barındırır. GitHub Pages ayarı `gh-pages /` şeklindedir.
+Kaynak kodu `main` dalında tutulur. Ana yayın Firebase Hosting üzerindedir. `gh-pages` dalı yalnızca `dist` içeriğini barındırır; GitHub Pages kopyasının ayarı `gh-pages /` şeklindedir. Canonical adres ve site haritası Firebase adresini işaret eder.
 
-Firebase Hosting için hesap oturumu açıldıktan sonra ilgili Firebase projesi seçilir ve aşağıdaki komutla yalnızca Hosting yayımlanır:
+Firebase Hosting'e güncelleme için hesap oturumu açıkken içerik üretilir ve yalnızca Hosting yayımlanır:
 
 ```sh
 firebase login
-firebase deploy --only hosting --project YOUR_PROJECT_ID
+python3 scripts/build.py
+firebase deploy --only hosting --project yayboz-elektrik
 ```
 
-Firebase hesabı/projesi oluşturulması ve yayın sonucu ayrıca doğrulanmalıdır. `firebase.json` dosyasının bulunması tek başına Firebase'e yayın yapıldığı anlamına gelmez. Firebase alan adına geçildiğinde `scripts/build.py` içindeki `BASE` adresi güncellenip sayfalar yeniden üretilir. Ücretsiz Hosting kullanım kotasına tabidir; ücretli plan veya özel alan adı satın alımı bu depoya dahil değildir.
+Firebase yayını 3 Kasım 2026 tarihinde tamamlandı. Projede ücretli faturalandırma kapalıdır ve fatura hesabı bağlı değildir. Ücretsiz Hosting kullanım kotasına tabidir. Özel alan adı satın alınmadı; `yayboz-elektrik.web.app` Firebase'in sağladığı HTTPS adresidir. Dağıtım kimlik bilgileri ve hesap oturumları bu depoda tutulmaz.
+
+Kurulum sırasında kullanılan `yayboz.web.app` adresi ana adrese 302 yönlendirmesi yapar. Bu ayrı yönlendirme `firebase.redirect.json` ile, yalnızca `yayboz` projesine yayımlanır; normal `firebase deploy` hedefi `yayboz-elektrik` olarak kalır.
 
 ## İçerik ve iletişim
 
