@@ -10,7 +10,8 @@ Firebase projesi ve Hosting sitesi: `yayboz-elektrik`. Kaynak kodu: https://gith
 
 - `dist/`: Yayımlanabilir statik site. Sunucu veya paket kurulumu gerektirmez.
 - `scripts/build.py`: İncelenmiş içerik, 9 hizmet ve 34 proje kaydından sayfaları üretir.
-- `dist/styles.css`, `dist/app.js`: Tasarım ve tarayıcı etkileşimleri.
+- `dist/styles.css`, `dist/app.js`: Lacivert, çelik grisi ve ölçülü turuncu tasarım; galeri, filtre ve iletişim etkileşimleri.
+- `scripts/sections/automation.html`, `dist/automation.css`, `dist/automation.js`: Başlat/durdur ve kontaktör mühürleme devresinin etkileşimli SVG gösterimi.
 - `firebase.json`: Firebase Hosting yapılandırması; yayımlanacak klasör `dist`.
 - `.firebaserc`: Kullanıcının oluşturduğu `yayboz-elektrik` Firebase projesi seçimi.
 - `ASSET_SOURCES.json`: Görsel kaynakları, temsili kapak görselinin üretim bilgisi.
@@ -44,10 +45,16 @@ Firma, 30 yıllık tecrübe ve mühendis kadrosu bilgileriyle tanıtılır. İsi
 
 Form, kullanıcının metnini WhatsApp bağlantısına ekler; mesajı ziyaretçi WhatsApp içinde gönderir. Site form verisi saklamaz. İstatistik izleyici ve reklam çerezi yoktur. Yazı tipleri ve görseller yerel olarak sunulur.
 
-Proje fotoğrafları ve teknik ekran görüntüleri özgün PowerPoint görsellerinden web için dönüştürülmüştür. Ana sayfadaki endüstriyel kapak yapay zekayla üretilmiş temsili görseldir; gerçek proje kanıtı olarak sunulmaz. Kaynak sunumdaki harici video dosyaları siteye dahil değildir. Simülasyon ve eğitim projeleri işaretlenmiştir.
+Altı kartlık uygulama bölümündeki yenilenmiş fotoğraflar, özgün proje referanslarına göre yapay zekâ ile oluşturulmuş ve “Görsel canlandırma” etiketiyle belirtilmiştir. Pano içi ve HMI görüntüleri özgün sunumdandır. Her kart özgün PowerPoint görsellerini açar. Ana sayfa kapağı ve Hakkımızda bölümündeki tesis fotoğrafı temsili görsellerdir. Yeni üretilen fotoğrafların doğal çözünürlüğü 1672 × 941 pikseldir; 800 piksel genişliğinde mobil varyantları da sunulur. 4K/UHD oldukları iddia edilmez. Üretim komutları ve kaynak bilgileri `ASSET_SOURCES.json` dosyasındadır.
+
+Kumanda devresi animasyonu tarayıcı içinde çalışır. Başlatma, kontaktörün çekmesi, yardımcı kontağın devreyi tutması ve durdurma aşamalarını gösterir. Otomatik gösterim duraklatılabilir; ekran dışında veya sekme gizliyken durur. İşletim sisteminin hareket azaltma tercihinde otomatik hareket kapalıdır, düğmeler statik durumları değiştirmeye devam eder. Fiziksel donanıma bağlı değildir; şema temsili gösterim içindir.
+
+Kaynak sunumdaki harici video dosyaları siteye dahil değildir. Simülasyon ve eğitim projeleri işaretlenmiştir.
 
 ## Doğrulama
 
 `scripts/check_browser.py`, Playwright ve Chromium ile telefon/masaüstü düzenini, proje filtrelerini, galeri kontrollerini, klavye erişimini ve WhatsApp mesaj hazırlamayı kontrol eder. Gerçek WhatsApp mesajı göndermez. Yerel araçlar, kaynak PowerPoint ve QA ekran görüntüleri Git'e alınmaz.
+
+`scripts/check_visual_refresh.py`, altı kartı, görsel etiketlerini, animasyonun başlat/durdur ve otomatik akışını, motor hareketini, ekran dışında duraklatmayı, hareket azaltma tercihini ve masaüstü/telefon erişilebilirliğini kontrol eder. `YAYBOZ_QA_URL` verilirse aynı kontrolleri canlı adreste çalıştırır.
 
 İşletmeye ait içerik ve proje görsellerinin hakları ilgili sahiplerine aittir. Manrope yazı tipi SIL Open Font License ile kullanılır; lisansı `dist/assets/Manrope-LICENSE.txt` içindedir.

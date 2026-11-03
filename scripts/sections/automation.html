@@ -1,0 +1,56 @@
+<section class="automation-section" id="otomasyon" aria-labelledby="automation-title">
+  <div class="container automation-layout">
+    <div class="automation-copy">
+      <p class="eyebrow">HER SİNYALİN BİR KARŞILIĞI VAR</p>
+      <h2 id="automation-title">Kontrol sizde.<br><span>Hareket sistemde.</span></h2>
+      <p>Bir başlangıç sinyaliyle kontaktör devreye girer, motor çalışır. Kumanda devresinin akışını küçük bir animasyonla keşfedin.</p>
+      <a class="text-link" href="#projeler">Otomasyon projelerini inceleyin <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="circuit-panel" id="control-circuit" data-phase="idle" data-motion="off">
+      <div class="circuit-heading"><span><i class="panel-indicator"></i> KUMANDA PANOSU</span><span class="circuit-subtitle">24 V DC · TEMSİLİ AKIŞ</span></div>
+      <div class="circuit-board">
+        <svg class="circuit-diagram" viewBox="0 0 540 260" role="img" aria-labelledby="circuit-svg-title circuit-svg-desc">
+          <title id="circuit-svg-title">Başlat, durdur ve kontaktör mühürleme devresi animasyonu</title>
+          <desc id="circuit-svg-desc">Başlat düğmesi kontaktörü etkinleştirir. Yardımcı kontak devreyi tutar; durdur düğmesi motorun çalışmasını sonlandırır.</desc>
+          <defs><pattern id="circuit-grid" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".7" fill="#42617d" opacity=".25"/></pattern><filter id="circuit-glow" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2"/></filter></defs>
+          <rect width="540" height="260" fill="url(#circuit-grid)"/>
+          <g class="circuit-labels"><text x="30" y="59">+24V</text><text x="105" y="85" text-anchor="middle">S0</text><text x="253" y="85" text-anchor="middle">S1</text><text x="253" y="239" text-anchor="middle">KM1</text><text x="411" y="85" text-anchor="middle">KM1</text><text x="494" y="59">0V</text></g>
+          <g class="circuit-wires" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M46 76V195M508 76V195M46 122H88M124 122H174M174 122H232M274 122H350M174 122V195H232M274 195H350V122M350 122H382M440 122H508"/>
+            <path class="live-supply" d="M46 76V122H88"/>
+            <path class="wire-stop" d="M124 122H174"/>
+            <path class="wire-start" d="M174 122H232M274 122H350"/>
+            <path class="wire-hold" d="M174 122V195H232M274 195H350V122"/>
+            <path class="wire-common" d="M350 122H382M440 122H508V76"/>
+          </g>
+          <g class="contact-nodes"><circle cx="88" cy="122" r="4"/><circle cx="124" cy="122" r="4"/><circle cx="232" cy="122" r="4"/><circle cx="274" cy="122" r="4"/><circle cx="232" cy="195" r="4"/><circle cx="274" cy="195" r="4"/><circle cx="174" cy="122" r="3"/><circle cx="350" cy="122" r="3"/></g>
+          <g class="contact-switches"><path class="switch-stop" d="M88 122H124"/><path class="switch-start" d="M232 122H274"/><path class="switch-hold" d="M232 195H274"/></g>
+          <path class="switch-stem" d="M106 101V113M97 101H115M253 99V108M244 99H262"/>
+          <rect class="contactor-coil" x="382" y="103" width="58" height="38" rx="4"/><path class="coil-stripe" d="M390 135 432 109"/>
+          <g class="circuit-small-labels"><text x="106" y="158" text-anchor="middle">DURDUR</text><text x="253" y="158" text-anchor="middle">BAŞLAT</text><text x="411" y="166" text-anchor="middle">KONTAKTÖR</text></g>
+          <g class="current-flow" fill="none"><path class="flow-start" d="M46 76V122H382M440 122H508V76"/><path class="flow-hold" d="M46 76V122H174V195H350V122H382M440 122H508V76"/></g>
+        </svg>
+        <div class="motor-display">
+          <svg viewBox="0 0 250 238" class="motor-illustration" role="img" aria-labelledby="motor-svg-title">
+            <title id="motor-svg-title">Kontaktörün çalıştırdığı elektrik motoru</title>
+            <defs><linearGradient id="motor-metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#4b6b89"/><stop offset=".5" stop-color="#193c5d"/><stop offset="1" stop-color="#0b2540"/></linearGradient><radialGradient id="motor-face"><stop stop-color="#193e60"/><stop offset="1" stop-color="#092440"/></radialGradient></defs>
+            <path d="M33 190H216" stroke="#24455f" stroke-width="2"/>
+            <rect x="69" y="80" width="108" height="91" rx="8" fill="url(#motor-metal)" stroke="#6a8ca9"/>
+            <g stroke="#7390a9" opacity=".6"><path d="M81 84V165M91 84V165M101 84V165M111 84V165M121 84V165M131 84V165M141 84V165"/></g>
+            <path d="M79 173 73 188H105L101 173M144 173 139 188H170L165 173" fill="#375975" stroke="#7a95ac"/>
+            <rect x="95" y="60" width="49" height="23" rx="3" fill="#284b69" stroke="#7b99b0"/>
+            <path class="motor-feed" d="M119 60V38H40" fill="none" stroke="#52728e" stroke-width="3"/>
+            <circle class="motor-power-led" cx="38" cy="38" r="4" fill="#6d8192"/>
+            <ellipse cx="169" cy="126" rx="43" ry="49" fill="url(#motor-face)" stroke="#8da7bc" stroke-width="2"/>
+            <g class="motor-rotor"><path d="M169 123c-24-30-41-16-31 1 9 13 21 7 31-1Zm0 0c38-6 35-28 15-27-15 1-17 15-15 27Zm0 0c-14 36 6 45 16 27 7-13-3-22-16-27Z" fill="#85a9c7" opacity=".85"/></g>
+            <circle cx="169" cy="126" r="8" fill="#d4e3ed"/>
+            <text x="125" y="219" text-anchor="middle" class="motor-name">M1 · ELEKTRİK MOTORU</text>
+          </svg>
+        </div>
+      </div>
+      <div class="circuit-status-row"><span class="signal-badge"><i></i> BESLEME</span><span class="signal-badge signal-contactor"><i></i> KONTAKTÖR</span><span class="signal-badge signal-motor"><i></i> MOTOR</span></div>
+      <div class="circuit-footer"><div class="circuit-state"><span id="circuit-state-title">Sistem hazır</span><small id="circuit-state-description">Başlatma sinyali bekleniyor.</small></div><div class="circuit-controls"><button type="button" id="circuit-start" aria-label="Kumanda devresi animasyonunu başlat"><span aria-hidden="true">▶</span> Başlat</button><button type="button" id="circuit-stop" aria-label="Kumanda devresi animasyonunu durdur"><span aria-hidden="true">■</span> Durdur</button><button type="button" id="circuit-auto" aria-pressed="true" aria-label="Otomatik animasyonu duraklat">Ⅱ</button></div></div>
+      <span class="sr-only" id="circuit-announcement" aria-live="polite"></span>
+    </div>
+  </div>
+</section>

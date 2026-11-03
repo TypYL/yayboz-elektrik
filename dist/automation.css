@@ -1,0 +1,63 @@
+/* A compact vector control circuit: crisp at every screen density. */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.automation-section{padding:80px 0;background:#eaf0f5;border-top:1px solid #dce5ed;border-bottom:1px solid #dce5ed}
+.automation-layout{display:grid;grid-template-columns:.85fr 1.6fr;gap:58px;align-items:center}
+.automation-copy h2{font-size:clamp(30px,2.8vw,40px);line-height:1.2}
+.automation-copy>p:not(.eyebrow){font-size:13px;color:var(--muted);line-height:1.9;max-width:340px}
+.automation-copy .eyebrow{font-size:9px;letter-spacing:.1em}
+.automation-copy .text-link{font-size:12px}
+.circuit-panel{min-width:0;background:linear-gradient(130deg,#112f4d,#071a30);border:1px solid #2d4d69;box-shadow:0 18px 42px #0c294621,inset 0 1px #ffffff0f;border-radius:8px;color:#e7f0f8;padding:22px 24px 20px;position:relative;overflow:hidden}
+.circuit-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:17px;border-bottom:1px solid #ffffff18;font-size:10px;font-weight:800;letter-spacing:.12em}
+.circuit-heading>span:first-child{display:flex;align-items:center;gap:8px}
+.panel-indicator{height:5px;width:5px;border-radius:50%;background:#ec9a5a;box-shadow:0 0 7px #ec9a5a55}
+.circuit-subtitle{font-size:8px;color:#a7bfd3;letter-spacing:.08em;font-weight:600}
+.circuit-board{display:flex;align-items:center;padding-block:10px 6px}
+.circuit-diagram{width:74%;height:auto;overflow:visible}
+.circuit-labels{font-size:18px;font-weight:600;fill:#d6e6f3;letter-spacing:.03em}
+.circuit-small-labels{font-size:13px;fill:#a9c1d6;letter-spacing:.035em}
+.circuit-wires{stroke:#4b6a85;stroke-width:3}
+.circuit-wires .live-supply{stroke:#85c9ed}
+.contact-nodes{fill:#102b46;stroke:#9bb6cc;stroke-width:2}
+.contact-switches,.switch-stem{fill:none;stroke:#b3c9db;stroke-width:3;stroke-linecap:round}
+.switch-start{transform-origin:232px 122px;transform:rotate(-29deg);transition:transform .25s,stroke .25s}
+.switch-hold{transform-origin:232px 195px;transform:rotate(-29deg);transition:transform .25s,stroke .25s}
+.switch-stop{transform-origin:88px 122px;transition:transform .25s,stroke .25s}
+.contactor-coil{fill:#153750;stroke:#9bb6cc;stroke-width:2;transition:fill .25s,stroke .25s}
+.coil-stripe{stroke:#8da9c0;stroke-width:2}
+.current-flow{stroke:#e6f8ff;stroke-width:2;stroke-dasharray:3 31;stroke-linecap:round;pointer-events:none}
+.current-flow>path{opacity:0;animation:circuit-flow 1.5s linear infinite;animation-play-state:paused}
+.motor-display{width:26%;border-left:1px solid #ffffff12}
+.motor-illustration{width:100%;height:auto;display:block}
+.motor-name{fill:#bfd0df;font-size:12px;letter-spacing:.06em;font-weight:600}
+.motor-rotor{transform-origin:169px 126px;animation:motor-turn 1.5s linear infinite;animation-play-state:paused}
+.circuit-status-row{display:flex;justify-content:center;gap:20px;padding:3px 0 19px}
+.signal-badge{font-size:8px;letter-spacing:.12em;font-weight:700;color:#b4c8d9;display:flex;align-items:center;gap:6px}
+.signal-badge i{width:5px;height:5px;display:block;border-radius:50%;background:#85c9ed;transition:background .2s,box-shadow .2s}
+.signal-contactor i,.signal-motor i{background:#526c82}
+.circuit-footer{display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid #ffffff18;padding-top:18px}
+.circuit-state span{display:block;font-size:12px;font-weight:700;line-height:1.4}
+.circuit-state small{display:block;color:#adc2d4;font-size:9px;margin-top:4px;line-height:1.6}
+.circuit-controls{display:flex;gap:6px;flex-shrink:0}
+.circuit-controls button{border:1px solid #52728c;background:#183851;border-radius:4px;min-height:40px;padding:8px 11px;color:#e4eff8;font-size:10px;font-weight:700;display:flex;align-items:center;gap:7px;transition:background .2s}
+.circuit-controls button:hover{background:#274f70}
+.circuit-controls button span{font-size:9px}
+.circuit-controls #circuit-start{border-color:#83b8d1;background:#a8d6eb;color:#09253e}
+.circuit-controls #circuit-start:hover{background:#c6e8f7}
+.circuit-controls #circuit-auto{font-size:16px;width:36px;padding:4px;justify-content:center}
+.circuit-panel[data-phase="start"] .switch-start,.circuit-panel:is([data-phase="start"],[data-phase="hold"]) .switch-hold{transform:rotate(0);stroke:#86d1eb}
+.circuit-panel[data-phase="stop"] .switch-stop{transform:rotate(-29deg);stroke:#ec9a5a}
+.circuit-panel:not([data-phase="stop"]) .wire-stop{stroke:#85c9ed}
+.circuit-panel:is([data-phase="start"],[data-phase="hold"]) :is(.wire-common,.wire-hold,.wire-start){stroke:#85c9ed}
+.circuit-panel:is([data-phase="start"],[data-phase="hold"]) .contactor-coil{fill:#247097;stroke:#a4e1f3}
+.circuit-panel:is([data-phase="start"],[data-phase="hold"]) .coil-stripe{stroke:#d2f4ff}
+.circuit-panel:is([data-phase="start"],[data-phase="hold"]) .motor-feed{stroke:#85c9ed}
+.circuit-panel:is([data-phase="start"],[data-phase="hold"]) .motor-power-led{fill:#85e0c2}
+.circuit-panel:is([data-phase="start"],[data-phase="hold"]) :is(.signal-contactor,.signal-motor) i{background:#85e0c2;box-shadow:0 0 7px #85e0c255}
+.circuit-panel[data-phase="start"] .flow-start,.circuit-panel[data-phase="hold"] .flow-hold{opacity:1}
+.circuit-panel[data-motion="on"]:is([data-phase="start"],[data-phase="hold"]) .motor-rotor,.circuit-panel[data-motion="on"] .current-flow>path{animation-play-state:running}
+@keyframes circuit-flow{to{stroke-dashoffset:-68}}
+@keyframes motor-turn{to{transform:rotate(360deg)}}
+@media(max-width:1199px){.automation-layout{gap:35px;grid-template-columns:.75fr 1.5fr}.circuit-panel{padding:20px 18px}.circuit-footer{flex-wrap:wrap}.circuit-controls{margin-left:auto}.circuit-subtitle{font-size:7px}.circuit-heading{font-size:9px}}
+@media(max-width:900px){.automation-layout{grid-template-columns:1fr;gap:28px}.automation-copy>p:not(.eyebrow){max-width:600px}.automation-copy h2 br{display:none}.automation-copy h2 span{display:block}.circuit-panel{padding:24px}.circuit-footer{flex-wrap:nowrap}.circuit-heading{font-size:10px}.circuit-subtitle{font-size:8px}}
+@media(max-width:700px){.automation-section{padding:58px 0}.automation-copy h2{font-size:33px}.automation-copy .eyebrow{font-size:8px}.circuit-panel{padding:19px 15px}.circuit-heading{font-size:9px;align-items:flex-start}.circuit-subtitle{font-size:7px;max-width:78px;text-align:right;line-height:1.8}.circuit-board{flex-direction:column;padding-top:14px}.circuit-diagram{width:100%}.motor-display{width:45%;max-width:170px;border-left:0;margin-top:-14px}.circuit-status-row{gap:15px}.signal-badge{font-size:7px}.circuit-footer{flex-direction:column;align-items:stretch;gap:15px}.circuit-state{text-align:center;min-height:36px}.circuit-state small{font-size:10px}.circuit-controls{margin:0;justify-content:center;gap:8px}.circuit-controls button{min-height:44px;font-size:11px;padding:10px 17px}.circuit-controls #circuit-auto{width:44px}.circuit-labels{font-size:21px}.circuit-small-labels{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.motor-rotor,.current-flow>path{animation:none!important}.contact-switches path{transition:none}.current-flow{stroke-dasharray:none;opacity:.5}}

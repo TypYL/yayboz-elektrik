@@ -13,7 +13,7 @@
     "disclosure": "Temsili endüstriyel görsel",
     "prompt": "Use case: ads-marketing. Create a premium wide 16:9 photographic website hero background for a Turkish electrical engineering and industrial automation company. Main subject: immaculate, physically plausible open electrical control cabinets on the right half, neatly routed cables, DIN rails, PLC modules, terminal blocks and copper busbars, leading into a modern factory production hall in the background. Composition: cinematic horizontal landscape, deep dark navy/charcoal negative space on the left 45 percent for a website headline that will be added in HTML; detailed sharp industrial equipment predominantly on the right. Subtle warm amber practical light, steel grey, small restrained orange and violet accents, realistic industrial photography, sophisticated high contrast lighting, no people, no dramatic sparks, no fantasy holograms, no logos, no lettering, no text, no watermark. This is an illustrative marketing scene, not documentation of a specific factory."
   },
-  "branding": "Vector lightning and text wordmark based on the user-provided Yayboz Elektrik business card; purple/orange palette preserved.",
+  "branding": "Yayboz lightning and text wordmark from the supplied business card, restyled at the user request with deep navy #071c36, blue #123457, steel grey and restrained orange #ec8b42. No third-party company marks or assets used.",
   "font": {
     "name": "Manrope",
     "source": "https://github.com/google/fonts/tree/main/ofl/manrope",
@@ -24,5 +24,95 @@
     "contact_source": "User-provided business card",
     "experience_and_engineering_team_source": "User instructions",
     "project_catalog_source": "User instructions and supplied presentation"
+  },
+  "visual_refresh_2026_11_03": [
+    {
+      "key": "measure",
+      "prompt": "Use case: precise-object-edit. Edit target: the supplied presentation slide; use ONLY its photograph of the two electrical measuring/control cabinets on the right as the subject. Produce a high-resolution, extremely crisp photorealistic editorial reconstruction of that same cabinet installation for an industrial company website. Output landscape 16:9, target native UHD 3840x2160 if available. Remove the slide layout, text, white margins and title completely. Preserve the recognizable two off-white cabinets, rear taller cabinet, blue HMI screens, blue indicator lights, green tower lamps, red emergency stops and yellow surrounds; preserve the equipment identities and relative arrangements. Show the cabinets cleanly in a neutral industrial workshop, medium wide composition with both cabinets visible, camera slightly to the left. Improve exposure, crisp metal texture, straight verticals and photographic sharpness; restrained deep navy shadows and cool daylight, only small existing amber/red accents. No people, no new logos, no invented readable technical labels, no marketing text, no watermark, no fantasy elements. Treat this as a clearly labeled visual reconstruction, not evidence of exact wiring. Preserve the actual physical structure rather than inventing different machinery.",
+      "input": [
+        "image8.png"
+      ],
+      "source_native_size": [
+        1672,
+        941
+      ],
+      "outputs": [
+        "dist/assets/measure-v2.webp",
+        "dist/assets/measure-v2-800.webp"
+      ],
+      "method": "Built-in image_gen; WebP conversion and responsive downsampling. No upscaling; generated output is 1672x941, not native 4K.",
+      "disclosure": "Görsel canlandırma; original presentation images remain available in each card gallery."
+    },
+    {
+      "key": "slitter",
+      "prompt": "Use case: precise-object-edit. Edit target: the supplied presentation slide; isolate and reconstruct ONLY the real foil-slitting machine photograph on the right. Deliver an exceptionally sharp premium industrial photograph, landscape 16:9, target native UHD 3840x2160 if available. Remove all slide typography, bullets and margins. Preserve the recognizable compact dark graphite machine frame, parallel silver rollers, striped cylindrical cutting assembly, front metal guide, small red/yellow emergency-stop controls, side motor/control housing and its real mechanical proportions. Preserve the same three-quarter angle and complete machine, with room around it; straighten perspective and improve lighting and surface detail. Clean, credible workshop background, restrained navy/steel-grey palette, subtle existing orange storage rack in soft focus. Do not add robotic arms, people, company logos, invented labels, sparks or futuristic elements. Real materials, natural photographic depth, elegant industrial editorial finish. This will be explicitly labeled as a visual reconstruction of the project reference, with the original photograph separately available.",
+      "input": [
+        "image16.png"
+      ],
+      "source_native_size": [
+        1672,
+        941
+      ],
+      "outputs": [
+        "dist/assets/slitter-v2.webp",
+        "dist/assets/slitter-v2-800.webp"
+      ],
+      "method": "Built-in image_gen; WebP conversion and responsive downsampling. No upscaling; generated output is 1672x941, not native 4K.",
+      "disclosure": "Görsel canlandırma; original presentation images remain available in each card gallery."
+    },
+    {
+      "key": "facility",
+      "prompt": "Use case: ads-marketing. Create a photorealistic high-end editorial photograph of a modern industrial manufacturing hall with electrical distribution and automation infrastructure. Landscape 16:9, target native UHD 3840x2160 if available. View down a clean factory aisle: orderly medium-sized CNC machines and production equipment, cable trays overhead, a line of tasteful closed steel-grey electrical cabinets with small control screens in the right foreground, distant machinery fading into depth. Credible Turkish industrial engineering company portfolio atmosphere. Deep navy and steel grey colour grade, white daylight through high windows, extremely restrained warm amber practical accents. Equipment and electrical installations should look physically plausible, not futuristic. Composition suitable for a broad website photo panel with a small headline over the lower left, but DO NOT add any text. Crisp premium photography, cinematic yet natural, realistic textures, no excessive teal, no purple, no neon, no sci-fi holograms, no workers, no logos, no watermark. Clearly a generic illustrative facility, not a specific claimed customer site.",
+      "input": [],
+      "source_native_size": [
+        1672,
+        941
+      ],
+      "outputs": [
+        "dist/assets/facility-v2.webp",
+        "dist/assets/facility-v2-800.webp"
+      ],
+      "method": "Built-in image_gen; WebP conversion and responsive downsampling. No upscaling; generated output is 1672x941, not native 4K.",
+      "disclosure": "Temsili tesis görseli"
+    },
+    {
+      "key": "blaster",
+      "prompt": "Use case: precise-object-edit. Reference is a presentation slide with a real tall vertical sheet-metal shot-blasting machine photograph on the right. Reconstruct ONLY that photographed machine in a premium, sharp, photorealistic editorial photograph for the project portfolio. Preserve the tall orange steel tower, vertical ladder on left, dark electric motors mounted vertically on right side of tower, attached machinery to right and small light-grey sloped-top control console in front. Do not replace it with unrelated machinery. Show the complete height of the tower and front console, generous horizontal landscape composition 16:9, maximum available native resolution, UHD if available. Neutral factory hall with charcoal/navy shadows and soft daylight; authentic orange machine paint, realistic steel and cable texture. Cleanly organized floor, remove the slide text/layout and scattered cardboard. Camera slight three-quarter front view like reference, natural scale and mechanical plausibility, no people, no extra machines, no readable labels, logos, watermark or captions. This is a clearly disclosed AI visual reconstruction based on a project reference, not exact project evidence.",
+      "input": [
+        "image3.png"
+      ],
+      "source_native_size": [
+        1672,
+        941
+      ],
+      "outputs": [
+        "dist/assets/blaster-v2.webp",
+        "dist/assets/blaster-v2-800.webp"
+      ],
+      "method": "Built-in image_gen; WebP conversion and responsive downsampling. No upscaling; output is 1672x941, not native 4K.",
+      "disclosure": "Görsel canlandırma; original presentation images remain available in each card gallery."
+    },
+    {
+      "key": "netting",
+      "prompt": "Use case: precise-object-edit. Use ONLY the real produce net-bagging machine photo on the right side of the supplied presentation slide. Reconstruct it as an exceptionally crisp high-quality industrial editorial photograph. Preserve its stainless steel vertical machine, top round dark hopper, central cylindrical orange net sleeve, two pale green reels on left/right, symmetrical small guide rollers, central sealing area with net bag holding onions, and the short inclined discharge conveyor at the bottom with onions. Preserve the actual mechanical arrangement and natural orange accents. Show full machine with a little workshop environment around it, in a landscape 16:9 composition at maximum native resolution, UHD if available. Straight verticals, soft industrial daylight, deep navy/steel-grey background, sharp metal texture, realistic camera optics. Remove all slide typography/bullets/margins, keep machinery credible, do not add futuristic parts, people, readable labels, company logos or watermarks. Clearly intended as an AI visual reconstruction of the reference, while original slide remains separately available.",
+      "input": [
+        "image21.png"
+      ],
+      "source_native_size": [
+        1672,
+        941
+      ],
+      "outputs": [
+        "dist/assets/netting-v2.webp",
+        "dist/assets/netting-v2-800.webp"
+      ],
+      "method": "Built-in image_gen; WebP conversion and responsive downsampling. No upscaling; output is 1672x941, not native 4K.",
+      "disclosure": "Görsel canlandırma; original presentation images remain available in each card gallery."
+    }
+  ],
+  "animation": {
+    "source": "Original HTML/CSS/SVG and JavaScript",
+    "purpose": "Illustrative 24V DC start-stop holding circuit with motor illustration; no physical control connection.",
+    "accessibility": "Keyboard controls, viewport and document visibility pause, prefers-reduced-motion support."
   }
 }

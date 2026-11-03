@@ -46,6 +46,7 @@ with sync_playwright() as p:
  check('drawing filter',page.locator('.catalog-item:visible').count()==11)
  page.get_by_role('button',name=re.compile('Tüm projeler 34')).click()
  page.locator('.project-card[data-project="p07"]').click()
+ page.locator('#project-dialog').wait_for(state='visible',timeout=5000)
  check('project modal opens',page.locator('#project-dialog').is_visible())
  check('gallery count',page.locator('#slide-count').inner_text()=='1 / 7')
  page.locator('.slide-next').click()
